@@ -1,4 +1,7 @@
 from SafeLog import *
 
-f = open("a.log")
-close_log_w_permission(f, "a")
+# f = open("a.log")
+# close_log_w_permission(f, "otherss")
+
+
+log_NER('ner.log')
