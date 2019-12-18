@@ -93,7 +93,7 @@ def log_NER(log):
 		elif idx >= 0 and idx < len(doc.ents):
 			ent = doc.ents[idx]
 			replace = ''.join('*' for i in range(len(ent.text)))
-			text = text[:ent.start_char-1] + replace + text[ent.end_char:]
+			text = text[:ent.start_char] + replace + text[ent.end_char:]
 	print("Output Log:", text)
 	return text
 	
